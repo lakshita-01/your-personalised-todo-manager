@@ -20,7 +20,7 @@ const AddTodo = ({ onAdd }: AddTodoProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-lg border shadow-sm p-4">
+    <form onSubmit={handleSubmit} className="rounded-lg border shadow-sm p-4" style={{ backgroundColor: '#d1c5a9' }}>
       <div className="flex gap-3">
         <Input
           type="text"

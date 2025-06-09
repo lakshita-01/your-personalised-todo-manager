@@ -33,9 +33,9 @@ const TodoItem = ({ todo, onToggle, onDelete, onEdit }: TodoItemProps) => {
   };
 
   return (
-    <div className={`bg-white rounded-lg border p-4 shadow-sm transition-all duration-200 hover:shadow-md ${
+    <div className={`rounded-lg border p-4 shadow-sm transition-all duration-200 hover:shadow-md ${
       todo.completed ? 'opacity-75' : ''
-    }`}>
+    }`} style={{ backgroundColor: '#d1c5a9' }}>
       <div className="flex items-center gap-3">
         <button
           onClick={() => onToggle(todo.id)}
