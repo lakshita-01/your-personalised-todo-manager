@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Check, Edit2, Trash2 } from "lucide-react";
 import { Todo } from "./TodoList";
@@ -35,7 +34,7 @@ const TodoItem = ({ todo, onToggle, onDelete, onEdit }: TodoItemProps) => {
   return (
     <div className={`rounded-lg border p-4 shadow-sm transition-all duration-200 hover:shadow-md ${
       todo.completed ? 'opacity-75' : ''
-    }`} style={{ backgroundColor: '#d1c5a9' }}>
+    }`} style={{ backgroundColor: '#eff0f0' }}>
       <div className="flex items-center gap-3">
         <button
           onClick={() => onToggle(todo.id)}

@@ -20,7 +20,7 @@ const AddTodo = ({ onAdd }: AddTodoProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-lg border shadow-sm p-4" style={{ backgroundColor: '#d1c5a9' }}>
+    <form onSubmit={handleSubmit} className="rounded-lg border shadow-sm p-4" style={{ backgroundColor: '#eff0f0' }}>
       <div className="flex gap-3">
         <Input
           type="text"
@@ -32,7 +32,7 @@ const AddTodo = ({ onAdd }: AddTodoProps) => {
         <Button
           type="submit"
           disabled={!text.trim()}
-          className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white px-6"
+          className="bg-gradient-to-r from-blue-700 to-indigo-800 hover:from-blue-800 hover:to-indigo-900 text-white px-6"
         >
           <Plus size={16} className="mr-1" />
           Add

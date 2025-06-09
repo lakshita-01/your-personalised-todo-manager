@@ -64,7 +64,7 @@ const TodoList = () => {
       <AddTodo onAdd={addTodo} />
       
       {totalCount > 0 && (
-        <div className="bg-white rounded-lg p-4 shadow-sm border">
+        <div className="rounded-lg p-4 shadow-sm border" style={{ backgroundColor: '#eff0f0' }}>
           <div className="flex items-center justify-between text-sm text-gray-600">
             <span>Progress</span>
             <span>{completedCount} of {totalCount} completed</span>
