@@ -71,8 +71,11 @@ const TodoList = () => {
           </div>
           <div className="mt-2 bg-gray-200 rounded-full h-2">
             <div 
-              className="bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full transition-all duration-500 ease-out"
-              style={{ width: totalCount > 0 ? `${(completedCount / totalCount) * 100}%` : '0%' }}
+              className="h-2 rounded-full transition-all duration-500 ease-out"
+              style={{ 
+                width: totalCount > 0 ? `${(completedCount / totalCount) * 100}%` : '0%',
+                backgroundColor: '#44bec7'
+              }}
             />
           </div>
         </div>
